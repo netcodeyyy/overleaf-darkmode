@@ -1,0 +1,547 @@
+/*
+-------------------------------------------------------------------------------
+Halfmoon CSS (Variables file)
+Version: 1.1.1
+https://www.gethalfmoon.com
+Copyright, Halfmoon UI
+Licensed under MIT (https://www.gethalfmoon.com/license)
+-------------------------------------------------------------------------------
+
+Below are only the different instances of scrollbars of halfmoon so that i can use those without restyling other parts of web pages
+*/
+
+
+:root { 
+    /*
+        ---------------------------------------------------------------------------
+        5.  Scrollbars [hmv-05]
+    
+        Notes:
+            ~ The webkit scrollbars work on webkit based browsers, such as Chrome, 
+            Safari, Brave, and the new Microsoft Edge.
+            ~ The custom CSS scrollbars work only on Firefox as of 2020.
+        ---------------------------------------------------------------------------
+        */
+        
+        --webkit-scrollbar-width-height: 1.4rem;
+        --webkit-scrollbar-track-border-width: var(--base-border-width);
+        --webkit-scrollbar-thumb-min-width-height: 3rem;
+        --webkit-scrollbar-thumb-border-width: 0.4rem;
+        --webkit-scrollbar-thumb-border-radius: 1rem;
+        --webkit-scrollbar-corner-border-width: var(--base-border-width);
+    
+        --lm-webkit-scrollbar-bg-color: transparent;
+        --lm-webkit-scrollbar-track-border-color: rgba(0, 0, 0, 0.1);
+        --lm-webkit-scrollbar-thumb-bg-color: rgba(0, 0, 0, 0.25);
+        --lm-webkit-scrollbar-thumb-bg-color-hover: rgba(0, 0, 0, 0.4);
+        --lm-webkit-scrollbar-thumb-border-color: transparent;
+        --lm-webkit-scrollbar-thumb-border-color-hover: transparent;
+        --lm-webkit-scrollbar-corner-bg-color: transparent;
+        --lm-webkit-scrollbar-corner-border-color: rgba(0, 0, 0, 0.1);
+    
+        --dm-webkit-scrollbar-bg-color: transparent;
+        --dm-webkit-scrollbar-track-border-color: rgba(255, 255, 255, 0.05);
+        --dm-webkit-scrollbar-thumb-bg-color: rgba(255, 255, 255, 0.25);
+        --dm-webkit-scrollbar-thumb-bg-color-hover: rgba(255, 255, 255, 0.4);
+        --dm-webkit-scrollbar-thumb-border-color: transparent;
+        --dm-webkit-scrollbar-thumb-border-color-hover: transparent;
+        --dm-webkit-scrollbar-corner-bg-color: transparent;
+        --dm-webkit-scrollbar-corner-border-color: rgba(255, 255, 255, 0.05);
+    
+        --css-scrollbar-width: thin;
+        --lm-css-scrollbar-color: var(--lm-webkit-scrollbar-thumb-bg-color) var(--lm-base-body-bg-color);
+        --dm-css-scrollbar-color: var(--dm-webkit-scrollbar-thumb-bg-color) var(--dm-base-body-bg-color);
+    
+        /* Sidebar scrollbar */
+    
+        --sidebar-webkit-scrollbar-width-height: var(--webkit-scrollbar-width-height);
+        --sidebar-webkit-scrollbar-track-border-width: var(--webkit-scrollbar-track-border-width);
+        --sidebar-webkit-scrollbar-thumb-border-width: var(--webkit-scrollbar-thumb-border-width);
+        --sidebar-webkit-scrollbar-thumb-border-radius: var(--webkit-scrollbar-thumb-border-radius);
+        --sidebar-webkit-scrollbar-corner-border-width: var(--webkit-scrollbar-corner-border-width);
+    
+        --lm-sidebar-webkit-scrollbar-bg-color: var(--lm-webkit-scrollbar-bg-color);
+        --lm-sidebar-webkit-scrollbar-track-border-color: var(--lm-webkit-scrollbar-track-border-color);
+        --lm-sidebar-webkit-scrollbar-thumb-bg-color: var(--lm-webkit-scrollbar-thumb-bg-color);
+        --lm-sidebar-webkit-scrollbar-thumb-bg-color-hover: var(--lm-webkit-scrollbar-thumb-bg-color-hover);  
+        --lm-sidebar-webkit-scrollbar-thumb-border-color: var(--lm-webkit-scrollbar-thumb-border-color);
+        --lm-sidebar-webkit-scrollbar-thumb-border-color-hover: var(--lm-webkit-scrollbar-thumb-border-color-hover);
+        --lm-sidebar-webkit-scrollbar-corner-bg-color: var(--lm-webkit-scrollbar-corner-bg-color);
+        --lm-sidebar-webkit-scrollbar-corner-border-color: var(--lm-webkit-scrollbar-corner-border-color);
+    
+        --dm-sidebar-webkit-scrollbar-bg-color: var(--dm-webkit-scrollbar-bg-color);
+        --dm-sidebar-webkit-scrollbar-track-border-color: var(--dm-webkit-scrollbar-track-border-color);
+        --dm-sidebar-webkit-scrollbar-thumb-bg-color: var(--dm-webkit-scrollbar-thumb-bg-color);
+        --dm-sidebar-webkit-scrollbar-thumb-bg-color-hover: var(--dm-webkit-scrollbar-thumb-bg-color-hover);
+        --dm-sidebar-webkit-scrollbar-thumb-border-color: var(--dm-webkit-scrollbar-thumb-border-color);
+        --dm-sidebar-webkit-scrollbar-thumb-border-color-hover: var(--dm-webkit-scrollbar-thumb-border-color-hover);
+        --dm-sidebar-webkit-scrollbar-corner-bg-color: var(--dm-webkit-scrollbar-corner-bg-color);
+        --dm-sidebar-webkit-scrollbar-corner-border-color: var(--dm-webkit-scrollbar-corner-border-color);
+    
+        --sidebar-css-scrollbar-width: var(--css-scrollbar-width);
+        --lm-sidebar-css-scrollbar-color: var(--lm-webkit-scrollbar-thumb-bg-color) var(--lm-sidebar-bg-color);
+        --dm-sidebar-css-scrollbar-color: var(--dm-webkit-scrollbar-thumb-bg-color) var(--dm-sidebar-bg-color);
+    
+        /*
+        Modal scrollbar
+    
+        Notes:
+            ~ By default, the light mode thumb background color and track border 
+            color are changed to the dark mode ones, as the modal overlay is close 
+            to black, even in light mode. 
+        */
+    
+        --modal-webkit-scrollbar-width-height: var(--webkit-scrollbar-width-height);
+        --modal-webkit-scrollbar-track-border-width: var(--webkit-scrollbar-track-border-width);
+        --modal-webkit-scrollbar-thumb-border-width: var(--webkit-scrollbar-thumb-border-width);
+        --modal-webkit-scrollbar-thumb-border-radius: var(--webkit-scrollbar-thumb-border-radius);
+        --modal-webkit-scrollbar-corner-border-width: var(--webkit-scrollbar-corner-border-width);
+    
+        --lm-modal-webkit-scrollbar-bg-color: var(--lm-webkit-scrollbar-bg-color);
+        --lm-modal-webkit-scrollbar-track-border-color: var(--dm-webkit-scrollbar-track-border-color); /* Changed */
+        --lm-modal-webkit-scrollbar-thumb-bg-color: var(--dm-webkit-scrollbar-thumb-bg-color); /* Changed */
+        --lm-modal-webkit-scrollbar-thumb-bg-color-hover: var(--dm-webkit-scrollbar-thumb-bg-color-hover); /* Changed */
+        --lm-modal-webkit-scrollbar-thumb-border-color: var(--lm-webkit-scrollbar-thumb-border-color);
+        --lm-modal-webkit-scrollbar-thumb-border-color-hover: var(--lm-webkit-scrollbar-thumb-border-color-hover);
+        --lm-modal-webkit-scrollbar-corner-bg-color: var(--lm-webkit-scrollbar-corner-bg-color);
+        --lm-modal-webkit-scrollbar-corner-border-color: var(--lm-webkit-scrollbar-corner-border-color);
+    
+        --dm-modal-webkit-scrollbar-bg-color: var(--dm-webkit-scrollbar-bg-color);
+        --dm-modal-webkit-scrollbar-track-border-color: var(--dm-webkit-scrollbar-track-border-color);
+        --dm-modal-webkit-scrollbar-thumb-bg-color: var(--dm-webkit-scrollbar-thumb-bg-color);
+        --dm-modal-webkit-scrollbar-thumb-bg-color-hover: var(--dm-webkit-scrollbar-thumb-bg-color-hover);
+        --dm-modal-webkit-scrollbar-thumb-border-color: var(--dm-webkit-scrollbar-thumb-border-color);
+        --dm-modal-webkit-scrollbar-thumb-border-color-hover: var(--dm-webkit-scrollbar-thumb-border-color-hover);
+        --dm-modal-webkit-scrollbar-corner-bg-color: var(--dm-webkit-scrollbar-corner-bg-color);
+        --dm-modal-webkit-scrollbar-corner-border-color: var(--dm-webkit-scrollbar-corner-border-color);
+    
+        --modal-css-scrollbar-width: var(--css-scrollbar-width);
+        --lm-modal-css-scrollbar-color: var(--dm-webkit-scrollbar-thumb-bg-color) transparent; /* Changed */
+        --dm-modal-css-scrollbar-color: var(--dm-webkit-scrollbar-thumb-bg-color) transparent;
+    
+        /*
+        Full screen modal scrollbar
+    
+        Notes:
+            ~ The background color of the scrollbar and the corner is changed to 
+            the modal content background colors. This is so that the scrollbars 
+            blend in with the content in the full screen modals. 
+        */
+    
+        --modal-full-webkit-scrollbar-width-height: var(--webkit-scrollbar-width-height);
+        --modal-full-webkit-scrollbar-track-border-width: var(--webkit-scrollbar-track-border-width);
+        --modal-full-webkit-scrollbar-thumb-border-width: var(--webkit-scrollbar-thumb-border-width);
+        --modal-full-webkit-scrollbar-thumb-border-radius: var(--webkit-scrollbar-thumb-border-radius);
+        --modal-full-webkit-scrollbar-corner-border-width: var(--webkit-scrollbar-corner-border-width);
+    
+        --lm-modal-full-webkit-scrollbar-bg-color: var(--lm-modal-full-content-bg-color); /* Changed */
+        --lm-modal-full-webkit-scrollbar-track-border-color: var(--lm-webkit-scrollbar-track-border-color);
+        --lm-modal-full-webkit-scrollbar-thumb-bg-color: var(--lm-webkit-scrollbar-thumb-bg-color);
+        --lm-modal-full-webkit-scrollbar-thumb-bg-color-hover: var(--lm-webkit-scrollbar-thumb-bg-color-hover);  
+        --lm-modal-full-webkit-scrollbar-thumb-border-color: var(--lm-webkit-scrollbar-thumb-border-color);
+        --lm-modal-full-webkit-scrollbar-thumb-border-color-hover: var(--lm-webkit-scrollbar-thumb-border-color-hover);
+        --lm-modal-full-webkit-scrollbar-corner-bg-color: var(--lm-modal-full-content-bg-color); /* Changed */
+        --lm-modal-full-webkit-scrollbar-corner-border-color: var(--lm-webkit-scrollbar-corner-border-color);
+    
+        --dm-modal-full-webkit-scrollbar-bg-color: var(--dm-modal-full-content-bg-color); /* Changed */
+        --dm-modal-full-webkit-scrollbar-track-border-color: var(--dm-webkit-scrollbar-track-border-color);
+        --dm-modal-full-webkit-scrollbar-thumb-bg-color: var(--dm-webkit-scrollbar-thumb-bg-color);
+        --dm-modal-full-webkit-scrollbar-thumb-bg-color-hover: var(--dm-webkit-scrollbar-thumb-bg-color-hover);
+        --dm-modal-full-webkit-scrollbar-thumb-border-color: var(--dm-webkit-scrollbar-thumb-border-color);
+        --dm-modal-full-webkit-scrollbar-thumb-border-color-hover: var(--dm-webkit-scrollbar-thumb-border-color-hover);
+        --dm-modal-full-webkit-scrollbar-corner-bg-color: var(--dm-modal-full-content-bg-color); /* Changed */
+        --dm-modal-full-webkit-scrollbar-corner-border-color: var(--dm-webkit-scrollbar-corner-border-color);
+    
+        --modal-full-css-scrollbar-width: var(--css-scrollbar-width);
+        --lm-modal-full-css-scrollbar-color: var(--lm-webkit-scrollbar-thumb-bg-color) var(--lm-modal-full-content-bg-color);
+        --dm-modal-full-css-scrollbar-color: var(--dm-webkit-scrollbar-thumb-bg-color) var(--dm-modal-full-content-bg-color);
+    
+        /* Card scrollbar */
+    
+        --card-webkit-scrollbar-width-height: var(--webkit-scrollbar-width-height);
+        --card-webkit-scrollbar-track-border-width: var(--webkit-scrollbar-track-border-width);
+        --card-webkit-scrollbar-thumb-border-width: var(--webkit-scrollbar-thumb-border-width);
+        --card-webkit-scrollbar-thumb-border-radius: var(--webkit-scrollbar-thumb-border-radius);
+        --card-webkit-scrollbar-corner-border-width: var(--webkit-scrollbar-corner-border-width);
+    
+        --lm-card-webkit-scrollbar-bg-color: var(--lm-webkit-scrollbar-bg-color);
+        --lm-card-webkit-scrollbar-track-border-color: var(--lm-webkit-scrollbar-track-border-color);
+        --lm-card-webkit-scrollbar-thumb-bg-color: var(--lm-webkit-scrollbar-thumb-bg-color);
+        --lm-card-webkit-scrollbar-thumb-bg-color-hover: var(--lm-webkit-scrollbar-thumb-bg-color-hover);  
+        --lm-card-webkit-scrollbar-thumb-border-color: var(--lm-webkit-scrollbar-thumb-border-color);
+        --lm-card-webkit-scrollbar-thumb-border-color-hover: var(--lm-webkit-scrollbar-thumb-border-color-hover);
+        --lm-card-webkit-scrollbar-corner-bg-color: var(--lm-webkit-scrollbar-corner-bg-color);
+        --lm-card-webkit-scrollbar-corner-border-color: var(--lm-webkit-scrollbar-corner-border-color);
+    
+        --dm-card-webkit-scrollbar-bg-color: var(--dm-webkit-scrollbar-bg-color);
+        --dm-card-webkit-scrollbar-track-border-color: var(--dm-webkit-scrollbar-track-border-color);
+        --dm-card-webkit-scrollbar-thumb-bg-color: var(--dm-webkit-scrollbar-thumb-bg-color);
+        --dm-card-webkit-scrollbar-thumb-bg-color-hover: var(--dm-webkit-scrollbar-thumb-bg-color-hover);
+        --dm-card-webkit-scrollbar-thumb-border-color: var(--dm-webkit-scrollbar-thumb-border-color);
+        --dm-card-webkit-scrollbar-thumb-border-color-hover: var(--dm-webkit-scrollbar-thumb-border-color-hover);
+        --dm-card-webkit-scrollbar-corner-bg-color: var(--dm-webkit-scrollbar-corner-bg-color);
+        --dm-card-webkit-scrollbar-corner-border-color: var(--dm-webkit-scrollbar-corner-border-color);
+    
+        --card-css-scrollbar-width: var(--css-scrollbar-width);
+        --lm-card-css-scrollbar-color: var(--lm-webkit-scrollbar-thumb-bg-color) var(--lm-card-bg-color);
+        --dm-card-css-scrollbar-color: var(--dm-webkit-scrollbar-thumb-bg-color) var(--dm-card-bg-color);
+    
+        /* CSS scrollbar with transparent track (for utility class) */
+    
+        --utility-transparent-track-css-scrollbar-width: var(--css-scrollbar-width);
+        --lm-utility-transparent-track-css-scrollbar-color: var(--lm-webkit-scrollbar-thumb-bg-color) transparent;
+        --dm-utility-transparent-track-css-scrollbar-color: var(--dm-webkit-scrollbar-thumb-bg-color) transparent;
+    
+    }
+    
+    /*
+    -------------------------------------------------------------------------------
+    3.  Scrollbars [hm-03]
+    
+    Notes:
+        ~ Any scrollbars on the body itself is not affected. This is because the 
+        page-wrapper is always expected, as the entire framework is built around 
+        it.
+        ~ Only styled on screens larger than 768px, because mobiles and tablets 
+        have disappearing scrollbars, which look great most of the time.
+        ~ The webkit scrollbars work on webkit based browsers, such as Chrome, 
+        Safari, Brave, and the new Microsoft Edge.
+        ~ The custom CSS scrollbars work only on Firefox as of 2020. It is a very 
+        new specification.
+    -------------------------------------------------------------------------------
+    */
+    
+    @media (min-width: 769px) {
+        /* Base scrollbar */
+    
+        .with-custom-webkit-scrollbars *::-webkit-scrollbar {
+            width: var(--webkit-scrollbar-width-height);
+            height: var(--webkit-scrollbar-width-height);
+            background-color: var(--lm-webkit-scrollbar-bg-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars *::-webkit-scrollbar {
+            background-color: var(--dm-webkit-scrollbar-bg-color);
+        }
+        .with-custom-webkit-scrollbars *::-webkit-scrollbar-track:vertical {
+            border-left: var(--webkit-scrollbar-track-border-width) solid var(--lm-webkit-scrollbar-track-border-color);
+        }
+        .with-custom-webkit-scrollbars *::-webkit-scrollbar-track:horizontal {
+            border-top: var(--webkit-scrollbar-track-border-width) solid var(--lm-webkit-scrollbar-track-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars *::-webkit-scrollbar-track {
+            border-color: var(--dm-webkit-scrollbar-track-border-color);
+        }
+        .with-custom-webkit-scrollbars *::-webkit-scrollbar-thumb {
+            min-width: var(--webkit-scrollbar-thumb-min-width-height);
+            min-height: var(--webkit-scrollbar-thumb-min-width-height);
+            background-color: var(--lm-webkit-scrollbar-thumb-bg-color);
+            border: var(--webkit-scrollbar-thumb-border-width) solid var(--lm-webkit-scrollbar-thumb-border-color);
+            -moz-background-clip: content;     /* Firefox 3.6 */
+            -webkit-background-clip: content;  /* Safari 4? Chrome 6? */
+            background-clip: content-box;
+            border-radius: var(--webkit-scrollbar-thumb-border-radius);
+        }
+        .with-custom-webkit-scrollbars *::-webkit-scrollbar-thumb:hover {
+            background-color: var(--lm-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--lm-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .dark-mode.with-custom-webkit-scrollbars *::-webkit-scrollbar-thumb {
+            background-color: var(--dm-webkit-scrollbar-thumb-bg-color);
+            border-color: var(--dm-webkit-scrollbar-thumb-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars *::-webkit-scrollbar-thumb:hover {
+            background-color: var(--dm-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--dm-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .with-custom-webkit-scrollbars *::-webkit-scrollbar-corner {
+            background-color: var(--lm-webkit-scrollbar-corner-bg-color);
+            border-left: var(--webkit-scrollbar-corner-border-width) solid var(--lm-webkit-scrollbar-corner-border-color);
+            border-top: var(--webkit-scrollbar-corner-border-width) solid var(--lm-webkit-scrollbar-corner-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars *::-webkit-scrollbar-corner {
+            background-color: var(--dm-webkit-scrollbar-corner-bg-color);
+            border-color: var(--dm-webkit-scrollbar-corner-border-color);
+        }
+    
+        .with-custom-css-scrollbars * {
+            scrollbar-width: var(--css-scrollbar-width);
+            scrollbar-color: var(--lm-css-scrollbar-color);
+        }
+        .dark-mode.with-custom-css-scrollbars * {
+            scrollbar-color: var(--dm-css-scrollbar-color);
+        }
+    
+        /* Sidebar scrollbar */
+    
+        .with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar {
+            width: var(--sidebar-webkit-scrollbar-width-height);
+            height: var(--sidebar-webkit-scrollbar-width-height);
+            background-color: var(--lm-sidebar-webkit-scrollbar-bg-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar {
+            background-color: var(--dm-sidebar-webkit-scrollbar-bg-color);
+        }
+        .with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-track {
+            border-width: var(--sidebar-webkit-scrollbar-track-border-width);
+            border-color: var(--lm-sidebar-webkit-scrollbar-track-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-track {
+            border-color: var(--dm-sidebar-webkit-scrollbar-track-border-color);
+        }
+        .with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-thumb {
+            background-color: var(--lm-sidebar-webkit-scrollbar-thumb-bg-color);
+            border-width: var(--sidebar-webkit-scrollbar-thumb-border-width);
+            border-color: var(--lm-sidebar-webkit-scrollbar-thumb-border-color);
+            border-radius: var(--sidebar-webkit-scrollbar-thumb-border-radius);
+        }
+        .with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-thumb:hover {
+            background-color: var(--lm-sidebar-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--lm-sidebar-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-thumb {
+            background-color: var(--dm-sidebar-webkit-scrollbar-thumb-bg-color);
+            border-color: var(--dm-sidebar-webkit-scrollbar-thumb-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-thumb:hover {
+            background-color: var(--dm-sidebar-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--dm-sidebar-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-corner {
+            background-color: var(--lm-sidebar-webkit-scrollbar-corner-bg-color);
+            border-width: var(--sidebar-webkit-scrollbar-corner-border-width);
+            border-color: var(--lm-sidebar-webkit-scrollbar-corner-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .sidebar::-webkit-scrollbar-corner {
+            background-color: var(--dm-sidebar-webkit-scrollbar-corner-bg-color);
+            border-color: var(--dm-sidebar-webkit-scrollbar-corner-border-color);
+        }
+    
+        .with-custom-css-scrollbars .sidebar {
+            scrollbar-width: var(--sidebar-css-scrollbar-width);
+            scrollbar-color: var(--lm-sidebar-css-scrollbar-color);
+        }
+        .dark-mode.with-custom-css-scrollbars .sidebar {
+            scrollbar-color: var(--dm-sidebar-css-scrollbar-color);
+        }
+    
+        /* Modal scrollbar */
+        
+        .with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar {
+            width: var(--modal-webkit-scrollbar-width-height);
+            height: var(--modal-webkit-scrollbar-width-height);
+            background-color: var(--lm-modal-webkit-scrollbar-bg-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar {
+            background-color: var(--dm-modal-webkit-scrollbar-bg-color);
+        }
+        .with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-track {
+            border-width: var(--modal-webkit-scrollbar-track-border-width);
+            border-color: var(--lm-modal-webkit-scrollbar-track-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-track {
+            border-color: var(--dm-modal-webkit-scrollbar-track-border-color);
+        }
+        .with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-thumb {
+            background-color: var(--lm-modal-webkit-scrollbar-thumb-bg-color);
+            border-width: var(--modal-webkit-scrollbar-thumb-border-width);
+            border-color: var(--lm-modal-webkit-scrollbar-thumb-border-color);
+            border-radius: var(--modal-webkit-scrollbar-thumb-border-radius);
+        }
+        .with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-thumb:hover {
+            background-color: var(--lm-modal-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--lm-modal-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-thumb {
+            background-color: var(--dm-modal-webkit-scrollbar-thumb-bg-color);
+            border-color: var(--dm-modal-webkit-scrollbar-thumb-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-thumb:hover {
+            background-color: var(--dm-modal-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--dm-modal-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-corner {
+            background-color: var(--lm-modal-webkit-scrollbar-corner-bg-color);
+            border-width: var(--modal-webkit-scrollbar-corner-border-width);
+            border-color: var(--lm-modal-webkit-scrollbar-corner-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-dialog::-webkit-scrollbar-corner {
+            background-color: var(--dm-modal-webkit-scrollbar-corner-bg-color);
+            border-color: var(--dm-modal-webkit-scrollbar-corner-border-color);
+        }
+    
+        .with-custom-css-scrollbars .modal-dialog {
+            scrollbar-width: var(--modal-css-scrollbar-width);
+            scrollbar-color: var(--lm-modal-css-scrollbar-color);
+        }
+        .dark-mode.with-custom-css-scrollbars .modal-dialog {
+            scrollbar-color: var(--dm-modal-css-scrollbar-color);
+        }
+    
+        /* Full screen modal scrollbar */
+        
+        .with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar {
+            width: var(--modal-full-webkit-scrollbar-width-height);
+            height: var(--modal-full-webkit-scrollbar-width-height);
+            background-color: var(--lm-modal-full-webkit-scrollbar-bg-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar {
+            background-color: var(--dm-modal-full-webkit-scrollbar-bg-color);
+        }
+        .with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-track {
+            border-width: var(--modal-full-webkit-scrollbar-track-border-width);
+            border-color: var(--lm-modal-full-webkit-scrollbar-track-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-track {
+            border-color: var(--dm-modal-full-webkit-scrollbar-track-border-color);
+        }
+        .with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-thumb {
+            background-color: var(--lm-modal-full-webkit-scrollbar-thumb-bg-color);
+            border-width: var(--modal-full-webkit-scrollbar-thumb-border-width);
+            border-color: var(--lm-modal-full-webkit-scrollbar-thumb-border-color);
+            border-radius: var(--modal-full-webkit-scrollbar-thumb-border-radius);
+        }
+        .with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-thumb:hover {
+            background-color: var(--lm-modal-full-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--lm-modal-full-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-thumb {
+            background-color: var(--dm-modal-full-webkit-scrollbar-thumb-bg-color);
+            border-color: var(--dm-modal-full-webkit-scrollbar-thumb-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-thumb:hover {
+            background-color: var(--dm-modal-full-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--dm-modal-full-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-corner {
+            background-color: var(--lm-modal-full-webkit-scrollbar-corner-bg-color);
+            border-width: var(--modal-full-webkit-scrollbar-corner-border-width);
+            border-color: var(--lm-modal-full-webkit-scrollbar-corner-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .modal-full .modal-dialog::-webkit-scrollbar-corner {
+            background-color: var(--dm-modal-full-webkit-scrollbar-corner-bg-color);
+            border-color: var(--dm-modal-full-webkit-scrollbar-corner-border-color);
+        }
+    
+        .with-custom-css-scrollbars .modal-full .modal-dialog {
+            scrollbar-width: var(--modal-full-css-scrollbar-width);
+            scrollbar-color: var(--lm-modal-full-css-scrollbar-color);
+        }
+        .dark-mode.with-custom-css-scrollbars .modal-full .modal-dialog {
+            scrollbar-color: var(--dm-modal-full-css-scrollbar-color);
+        }
+    
+        /* Card scrollbar */
+    
+        .with-custom-webkit-scrollbars .card::-webkit-scrollbar {
+            width: var(--card-webkit-scrollbar-width-height);
+            height: var(--card-webkit-scrollbar-width-height);
+            background-color: var(--lm-card-webkit-scrollbar-bg-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .card::-webkit-scrollbar {
+            background-color: var(--dm-card-webkit-scrollbar-bg-color);
+        }
+        .with-custom-webkit-scrollbars .card::-webkit-scrollbar-track {
+            border-width: var(--card-webkit-scrollbar-track-border-width);
+            border-color: var(--lm-card-webkit-scrollbar-track-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .card::-webkit-scrollbar-track {
+            border-color: var(--dm-card-webkit-scrollbar-track-border-color);
+        }
+        .with-custom-webkit-scrollbars .card::-webkit-scrollbar-thumb {
+            background-color: var(--lm-card-webkit-scrollbar-thumb-bg-color);
+            border-width: var(--card-webkit-scrollbar-thumb-border-width);
+            border-color: var(--lm-card-webkit-scrollbar-thumb-border-color);
+            border-radius: var(--card-webkit-scrollbar-thumb-border-radius);
+        }
+        .with-custom-webkit-scrollbars .card::-webkit-scrollbar-thumb:hover {
+            background-color: var(--lm-card-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--lm-card-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .card::-webkit-scrollbar-thumb {
+            background-color: var(--dm-card-webkit-scrollbar-thumb-bg-color);
+            border-color: var(--dm-card-webkit-scrollbar-thumb-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .card::-webkit-scrollbar-thumb:hover {
+            background-color: var(--dm-card-webkit-scrollbar-thumb-bg-color-hover);
+            border-color: var(--dm-card-webkit-scrollbar-thumb-border-color-hover);
+        }
+        .with-custom-webkit-scrollbars .card::-webkit-scrollbar-corner {
+            background-color: var(--lm-card-webkit-scrollbar-corner-bg-color);
+            border-width: var(--card-webkit-scrollbar-corner-border-width);
+            border-color: var(--lm-card-webkit-scrollbar-corner-border-color);
+        }
+        .dark-mode.with-custom-webkit-scrollbars .card::-webkit-scrollbar-corner {
+            background-color: var(--dm-card-webkit-scrollbar-corner-bg-color);
+            border-color: var(--dm-card-webkit-scrollbar-corner-border-color);
+        }
+    
+        .with-custom-css-scrollbars .card {
+            scrollbar-width: var(--card-css-scrollbar-width);
+            scrollbar-color: var(--lm-card-css-scrollbar-color);
+        }
+        .dark-mode.with-custom-css-scrollbars .card {
+            scrollbar-color: var(--dm-card-css-scrollbar-color);
+        }
+    
+        /* CSS scrollbar with transparent track (utility class) */
+    
+        .with-custom-css-scrollbars .css-scrollbar-transparent-track {
+            scrollbar-width: var(--utility-transparent-track-css-scrollbar-width) !important;
+            scrollbar-color: var(--lm-utility-transparent-track-css-scrollbar-color) !important;
+        }
+        .dark-mode.with-custom-css-scrollbars .css-scrollbar-transparent-track {
+            scrollbar-color: var(--dm-utility-transparent-track-css-scrollbar-color) !important;
+        }
+    }
+    
+    /* right pane pdf backdrop */
+    div .pdf-viewer.ng-scope {
+        background: #161B22 !important;
+    }
+    
+    /* left pane resize */
+    #ide-body > div.ui-layout-center.ui-layout-pane.ui-layout-pane-center > div.full-size.ui-layout-container > div.ui-layout-center.ng-scope.ui-layout-pane.ui-layout-pane-center.rp-state-current-file.rp-state-current-file-mini > div.ui-layout-mask.ui-layout-mask-center.ui-layout-mask-inside-pane {
+        background: #282A36 !important;
+    }
+    
+    /* right pane resize */
+    #ide-body > div.ui-layout-center.ui-layout-pane.ui-layout-pane-center > div.full-size.ui-layout-container > div.ui-layout-east.ui-layout-pane.ui-layout-pane-east > div.ui-layout-mask.ui-layout-mask-east.ui-layout-mask-inside-pane {
+        background: #151B22 !important;  
+    }
+    
+    /* top left button in overleaf */
+    fieldset.toggle-switch {
+        background: #1E2530 !important;
+    }
+    
+    /* right pane backdrop*/
+    #ide-body > div.ui-layout-center.ui-layout-pane.ui-layout-pane-center > div.full-size.ui-layout-container > div.ui-layout-east.ui-layout-pane.ui-layout-pane-east > div > div {
+        background: #161B22 !important;
+    }
+    
+    /* left pane loading panel*/
+    #ide-body > div.ui-layout-center.ui-layout-pane.ui-layout-pane-center > div.full-size.ui-layout-container > div.ui-layout-center.ng-scope.ui-layout-pane.ui-layout-pane-center.rp-state-current-file.rp-state-current-file-mini > div.loading-panel {
+        background: #282A36 !important;
+    }
+    
+    /* pdf page div 
+    #ide-body > div.ui-layout-center.ui-layout-pane.ui-layout-pane-center > div.full-size.ui-layout-container > div.ui-layout-east.ui-layout-pane.ui-layout-pane-east > div > div > div:nth-child(3) > div > div > div.pdfjs-viewer.ng-isolate-scope > div {
+        background: #282A36 !important;   
+    }
+    
+    pdf page div 2 
+    #ide-body > div.ui-layout-center.ui-layout-pane.ui-layout-pane-center > div.full-size.ui-layout-container > div.ui-layout-east.ui-layout-pane.ui-layout-pane-east > div > div > div:nth-child(3) > div > div > div.pdfjs-viewer.ng-isolate-scope > div > div {
+        background: #000 !important;   
+    }
+    
+    canvas {
+        background: #000 !important;
+    }
+    */
+    
+    .highlights-layer {
+        background: #1E2530 !important;
+        z-index: 5000 !important;
+    }
+    
+    

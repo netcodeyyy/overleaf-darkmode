@@ -1,0 +1,28 @@
+{
+    "name": "Overleaf Dark Mode",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "hacky implementation of a dark mode for Overleaf",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.overleaf.com/project/*"],
+            "css": ["styles.css"],
+            "js": ["overleaf.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_title": "Overleaf Dark Mode"
+    }
+}
