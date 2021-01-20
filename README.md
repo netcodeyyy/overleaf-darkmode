@@ -2,7 +2,7 @@
 hacky implementation of a dark mode for Overleaf. It works by injecting css and js into the project view, to enable custom dark-themed scroll bars (courtesy of [halfmoon](https://github.com/halfmoonui/halfmoon)) restyle some elements and prevent annoying white flashes on recompile, panel resizing and initial loading.
 
 # Usage
-- Install the firefox extension [here](https://addons.mozilla.org/en-US/firefox/addon/overleaf-dark-mode/). (Chrome extension pending review)
+- Install the [Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/overleaf-dark-mode/) or the [Chrome extension](https://chrome.google.com/webstore/detail/overleaf-dark-mode/ikljddlmgjbaieelllmogbclikdadhnf?utm_source=chrome-ntp-icon)
 - In Overleaf choose a dark theme for the left pane editor (`dracula` recommended).
 - In your preamble include the following:
 ```
